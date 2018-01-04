@@ -31,7 +31,7 @@ Chromeの場合、[Tampermonkey](https://chrome.google.com/webstore/detail/tampermon
 ## 注意事項
 * 必ず**重複したタブを閉じて既に開いているタブに移動するアドオン**を併用してください。  
 * 移動先のカタログやスレが既に閉じられていた場合は新たにタブが開きます。  
-* 判定除外機能は一つでも条件が一致すると有効になります。例えばレス\(CLASS\_RTD\)を除外有効にすると、レス本文\(TAB\_BLOCKQUOTE\)を除外無効にしていても、レス本文がレスの領域内のため移動無効になります。  
+* 判定除外機能は一つでも条件が一致すると有効になります。例えばレス\(CLASS\_RTD\)を除外有効にすると、レス本文\(TAG\_BLOCKQUOTE\)を除外無効にしていても、レス本文がレスの領域内のため移動無効になります。  
 * FirefoxアドオンDuplicate Tabs Closer使用時は以下の設定にしてください。  
   - On duplicate tab detected : Close tab automatically  
   - On remaining tab : Activate  
