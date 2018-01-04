@@ -28,6 +28,7 @@ this.$ = this.jQuery = jQuery.noConflict(true);
 		var TAG_IMG = true;						//画像
 		var TAG_INPUT = true;					//テキスト入力欄・ボタン
 		var TAG_TEXTAREA = true;				//コメント入力欄
+		var TAG_SMALL = true;					//カタログ スレ本文
 		var CLASS_RTD = false;					//レス（背景色の付いた領域）
 		var CLASS_DEL = true;					//DELボタン
 		var CLASS_SOD = true;					//そうだねボタン
@@ -43,6 +44,7 @@ this.$ = this.jQuery = jQuery.noConflict(true);
 		var CLASS_FUTABA_ID_IP_POPUP = true;	//futaba ID+IP popup
 		var CLASS_ID_COUNTER_WEBEXT = true;		//idcounter-webext
 		var CLASS_ID_COUNTER_USERSCRIPT = true;	//idcounter-userscript
+		var CLASS_FTH = true;					//futaba thread highlighter
 
 	var serverName = document.domain.match(/^[^.]+/);
 	var pathName = location.pathname.match(/[^/]+/);
@@ -55,6 +57,7 @@ this.$ = this.jQuery = jQuery.noConflict(true);
 		TAG_IMG,					"img,",
 		TAG_INPUT,					"input,",
 		TAG_TEXTAREA,				"textarea,",
+		TAG_SMALL,					"small,",
 		CLASS_RTD,					".rtd,",
 		CLASS_DEL,					".del,",
 		CLASS_SOD,					".sod,",
@@ -70,6 +73,7 @@ this.$ = this.jQuery = jQuery.noConflict(true);
 		CLASS_FUTABA_ID_IP_POPUP,	".GM_fip_name,",
 		CLASS_ID_COUNTER_WEBEXT,	".webext_fidc_a,.webext_fidc_popup,",
 		CLASS_ID_COUNTER_USERSCRIPT,".gm_fidc_a,.gm_fidc_popup,",
+		CLASS_FTH,					".GM_fth_pickuped_caption,.GM_fth_opened_caption,",
 	];
 
 	init();
@@ -111,22 +115,22 @@ this.$ = this.jQuery = jQuery.noConflict(true);
 		$(document).dblclick(function(event){
 			if (LEFT_BUTTON_ONLY && event.button !== 0) return;
 			var $target = $(event.target);
-			var href = location.href;
 //			console.log("futaba move to catalog: target[0].tagName = " + $target[0].tagName);
 //			console.log("futaba move to catalog: target.closest.length = " + $target.closest(exclusion).length);
-			if (hasCatalog) {
-				moveToLastThread();
-				removeSelection();
-			} else if (!$target.closest(exclusion).length) {
-				moveToCatalog();
-				removeSelection();
+			if (!$target.closest(exclusion).length) {
+				if (hasCatalog) {
+					moveToLastThread();
+					removeSelection();
+				} else {
+					moveToCatalog();
+					removeSelection();
+				}
 			}
 
 			/*
 			 *	最後にダブルクリックしたレスに移動する
 			 */
 			function moveToLastThread() {
-				if ($target.closest(exclusion).length) return;
 				var lastThreadUrl = getUrl("last_thread");
 				if (lastThreadUrl) {
 					window.open(lastThreadUrl);
@@ -137,7 +141,6 @@ this.$ = this.jQuery = jQuery.noConflict(true);
 	 		 *	カタログに移動する
 	 		 */
 			function moveToCatalog() {
-				if ($target.closest(exclusion).length) return;
 				var catalogUrl = "";
 				if (window.opener) {
 					catalogUrl = opener.location.href;
