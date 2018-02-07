@@ -45,6 +45,9 @@ this.$ = this.jQuery = jQuery.noConflict(true);
 		var CLASS_ID_COUNTER_WEBEXT = true;		//idcounter-webext
 		var CLASS_ID_COUNTER_USERSCRIPT = true;	//idcounter-userscript
 		var CLASS_FTH = true;					//futaba thread highlighter
+		var ID_FTH_MENU = true;					//futaba thread highlighter メニュー
+		var ID_FCN_MENU = true;					//futaba catalog NG メニュー
+		var CLASS_FCN_BUTTON = true;			//futaba catalog NG NGボタン
 
 	var serverName = document.domain.match(/^[^.]+/);
 	var pathName = location.pathname.match(/[^/]+/);
@@ -74,6 +77,9 @@ this.$ = this.jQuery = jQuery.noConflict(true);
 		CLASS_ID_COUNTER_WEBEXT,	".webext_fidc_a,.webext_fidc_popup,",
 		CLASS_ID_COUNTER_USERSCRIPT,".gm_fidc_a,.gm_fidc_popup,",
 		CLASS_FTH,					".GM_fth_pickuped_caption,.GM_fth_opened_caption,",
+		ID_FTH_MENU,				"#GM_fth_container_header,",
+		ID_FCN_MENU,				"#GM_fcn_ng_words_header,#GM_fcn_ng_list_header,",
+		CLASS_FCN_BUTTON,			".GM_fcn_ng_button,",
 	];
 
 	init();
