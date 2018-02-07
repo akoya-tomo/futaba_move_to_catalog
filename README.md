@@ -39,6 +39,8 @@ Chromeの場合、[Tampermonkey](https://chrome.google.com/webstore/detail/tampermon
   - Compare with tab title のチェックを外す（タブタイトルを変更しているとき）  
 
 ## 更新履歴
+* v1.0.2 2018-02-07
+  - ダブルクリック判定除外項目にfutaba thread highlighterメニューとfutaba catalog NGを追加  
 * v1.0.1 2018-01-04
   - ダブルクリック判定除外の判定タイミング不具合修正  
   - ダブルクリック判定除外項目追加  
