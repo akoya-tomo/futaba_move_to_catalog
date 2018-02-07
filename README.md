@@ -6,7 +6,7 @@ Firefoxの場合、[Tampermonkey](https://addons.mozilla.org/ja/firefox/addon/tamper
 Chromeの場合、[Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)を先にインスールしてからスクリプトをインストールして下さい。  
 
 ※こののUserscriptはFirefoxアドオン[Duplicate Tabs Closer](https://addons.mozilla.org/ja/firefox/addon/duplicate-tabs-closer/)・[move to an already opened tab](https://addons.mozilla.org/ja/firefox/addon/move-to-an-already-opened-tab/)・[move to an already opened tab kai](https://github.com/akoya-tomo/move_to_an_already_opened_tab_kai/)やChromeアドオン[No Dupe Tabs](https://chrome.google.com/webstore/detail/no-dupe-tabs/fajkhkmabkgflclnlmfdafpikejjncca/)などの重複したタブを閉じて既に開いているタブへ移動するアドオンが必要です。  
-※他のUserscriptやFirefoxアドオン[KOSHIAN](https://addons.mozilla.org/ja/firefox/user/anonymous-a0bba9187b568f98732d22d51c5955a6/)の派生版は[こちら](https://github.com/akoya-tomo/futaba_auto_reloader_K/wiki)の一覧からどうぞ。  
+※他のUserscriptやFirefoxアドオン[KOSHIAN](https://addons.mozilla.org/ja/firefox/user/anonymous-a0bba9187b568f98732d22d51c5955a6/)の改変版は[こちら](https://github.com/akoya-tomo/futaba_auto_reloader_K/wiki)の一覧からどうぞ。  
 
 ## 使い方
 * ふたばのスレ画面で背景をダブルクリックするとそのスレの板のカタログに移動します。  
