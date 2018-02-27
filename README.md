@@ -38,6 +38,10 @@ Chromeの場合、[Tampermonkey](https://chrome.google.com/webstore/detail/tampermon
   - Priority : Keep older tab  
   - Compare with tab title のチェックを外す（タブタイトルを変更しているとき）  
 
+## 既知の問題
+* Duplicate Tabs Closer 3.1.4で残ったタブがactiveにならないことがあります。  
+  不具合が発生した場合はDuplicate Tabs Closerを3.1.2にダウングレードしてください。  
+
 ## 更新履歴
 * v1.0.2 2018-02-07
   - ダブルクリック判定除外項目にfutaba thread highlighterメニューとfutaba catalog NGを追加  
