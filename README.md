@@ -39,8 +39,8 @@ Chromeの場合、[Tampermonkey](https://chrome.google.com/webstore/detail/tampermon
   - Compare with tab title のチェックを外す（タブタイトルを変更しているとき）  
 
 ## 既知の問題
-* Duplicate Tabs Closer 3.1.4で残ったタブがactiveにならないことがあります。  
-  不具合が発生した場合はDuplicate Tabs Closerを3.1.2にダウングレードしてください。  
+* ~~Duplicate Tabs Closer 3.1.4で残ったタブがactiveにならない。~~  
+  Duplicate Tabs Closer 3.1.5で修正されました。最新版へ更新してください。  
 
 ## 更新履歴
 * v1.0.2 2018-02-07
