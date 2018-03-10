@@ -48,6 +48,7 @@ this.$ = this.jQuery = jQuery.noConflict(true);
 		var ID_FTH_MENU = true;					//futaba thread highlighter メニュー
 		var ID_FCN_MENU = true;					//futaba catalog NG メニュー
 		var CLASS_FCN_BUTTON = true;			//futaba catalog NG NGボタン
+		var TAG_TABLE_BORDER = false;			//カタログテーブル
 
 	var serverName = document.domain.match(/^[^.]+/);
 	var pathName = location.pathname.match(/[^/]+/);
@@ -80,6 +81,7 @@ this.$ = this.jQuery = jQuery.noConflict(true);
 		ID_FTH_MENU,				"#GM_fth_container_header,",
 		ID_FCN_MENU,				"#GM_fcn_ng_words_header,#GM_fcn_ng_list_header,",
 		CLASS_FCN_BUTTON,			".GM_fcn_ng_button,",
+		TAG_TABLE_BORDER,			"table[border],",
 	];
 
 	init();
