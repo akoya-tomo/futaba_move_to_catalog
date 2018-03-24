@@ -12,6 +12,7 @@
 // @grant          GM_getValue
 // @grant          GM_setValue
 // @license        MIT
+// @noframes
 // ==/UserScript==
 
 this.$ = this.jQuery = jQuery.noConflict(true);
