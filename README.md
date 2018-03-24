@@ -44,6 +44,8 @@ Chromeの場合、[Tampermonkey](https://chrome.google.com/webstore/detail/tampermon
   - Chrome版Duplicate Tabs Closer3.1.5にて偶に発生することが確認されています。気になる方は[No Dupe Tabs](https://chrome.google.com/webstore/detail/no-dupe-tabs/fajkhkmabkgflclnlmfdafpikejjncca/)の使用を推奨します。  
 
 ## 更新履歴
+* v1.0.4 2018-03-24
+  - KOSHIAN フォーム拡張アドオンと併用すると誤動作する不具合修正
 * v1.0.3 2018-03-10
   - ダブルクリック判定除外項目にカタログテーブルを追加  
 * v1.0.2 2018-02-07

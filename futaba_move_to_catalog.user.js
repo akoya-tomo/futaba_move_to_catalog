@@ -7,11 +7,12 @@
 // @include        https://*.2chan.net/*/futaba.php?mode=cat*
 // @include        http://*.2chan.net/*/res/*
 // @include        https://*.2chan.net/*/res/*
-// @version        1.0.3
+// @version        1.0.4
 // @require        http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js
 // @grant          GM_getValue
 // @grant          GM_setValue
 // @license        MIT
+// @noframes
 // ==/UserScript==
 
 this.$ = this.jQuery = jQuery.noConflict(true);
@@ -123,8 +124,8 @@ this.$ = this.jQuery = jQuery.noConflict(true);
 		$(document).dblclick(function(event){
 			if (LEFT_BUTTON_ONLY && event.button !== 0) return;
 			var $target = $(event.target);
-//			console.log("futaba move to catalog: target[0].tagName = " + $target[0].tagName);
-//			console.log("futaba move to catalog: target.closest.length = " + $target.closest(exclusion).length);
+			//console.log("futaba move to catalog: target[0].tagName = " + $target[0].tagName);
+			//console.log("futaba move to catalog: target.closest.length = " + $target.closest(exclusion).length);
 			if (!$target.closest(exclusion).length) {
 				if (hasCatalog) {
 					moveToLastThread();
@@ -207,7 +208,7 @@ this.$ = this.jQuery = jQuery.noConflict(true);
 		obj_url[currentUrl] = location.href;
 		var jsonstring = JSON.stringify(obj_url);
 		GM_setValue("url", jsonstring);
-//		console.log("futaba move to catalog: url updated@" + currentUrl + " - " + location.href);
+		//console.log("futaba move to catalog: url updated@" + currentUrl + " - " + location.href);
 	}
 
 })(jQuery);
