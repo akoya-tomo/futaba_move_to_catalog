@@ -82,7 +82,7 @@ this.$ = this.jQuery = jQuery.noConflict(true);
 		ID_FTH_MENU,				"#GM_fth_container_header,",
 		ID_FCN_MENU,				"#GM_fcn_ng_words_header,#GM_fcn_ng_list_header,",
 		CLASS_FCN_BUTTON,			".GM_fcn_ng_button,",
-		TAG_TABLE_BORDER,			"table[border],",
+		TAG_TABLE_BORDER,			"table[border='1'],",
 	];
 
 	init();
