@@ -6,6 +6,7 @@ Firefoxの場合、[Tampermonkey](https://addons.mozilla.org/ja/firefox/addon/tamper
 Chromeの場合、[Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)を先にインスールしてからスクリプトをインストールして下さい。  
 
 ※このUserscriptはFirefoxアドオン[Duplicate Tabs Closer](https://addons.mozilla.org/ja/firefox/addon/duplicate-tabs-closer/)・[move to an already opened tab](https://addons.mozilla.org/ja/firefox/addon/move-to-an-already-opened-tab/)・[move to an already opened tab kai](https://github.com/akoya-tomo/move_to_an_already_opened_tab_kai/)やChromeアドオン[No Dupe Tabs](https://chrome.google.com/webstore/detail/no-dupe-tabs/fajkhkmabkgflclnlmfdafpikejjncca/)・[Duplicate Tabs Closer](https://chrome.google.com/webstore/detail/duplicate-tabs-closer/gnmdbogfankgjepgglmmfmbnimcmcjle/)などの重複したタブを閉じて既に開いているタブへ移動するアドオンが必要です。  
+※Firefoxではこのスクリプトの代わりにほぼ同機能で新しいタブを開かずに移動できる[**KOSHIAN タブ制御**](https://github.com/akoya-tomo/koshian_tab_controller/)アドオンの使用を推奨します。  
 ※他のふたば閲覧支援ツールは[こちら](https://github.com/akoya-tomo/futaba_auto_reloader_K/wiki)。  
 
 ## 使い方
