@@ -15,7 +15,7 @@ Chromeの場合、[Tampermonkey](https://chrome.google.com/webstore/detail/tampermon
 
 ## インストール
 
-[GreasyFork](https://greasyfork.org/ja/scripts/36988-futaba-move-to-catalog)　[GitHub](https://github.com/akoya-tomo/futaba_move_to_catalog/raw/master/futaba_move_to_catalog.user.js)  
+[GitHub](https://github.com/akoya-tomo/futaba_move_to_catalog/raw/master/futaba_move_to_catalog.user.js)  
 
 ## 設定
 機能の動作はスクリプト冒頭の大文字変数をエディタで編集すれば変更することができます。  
